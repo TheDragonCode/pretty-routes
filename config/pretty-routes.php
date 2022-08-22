@@ -57,6 +57,7 @@ return [
         '#^_ignition#',
         '#^horizon#',
         '#^routes#',
+        '#^sanctum/csrf-cookie#',
         '#^telescope#',
     ],
 
