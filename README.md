@@ -98,7 +98,7 @@ Open the `/route` uri. For example, [http://localhost:8000/route](http://localho
 This package is licensed under the [MIT License](LICENSE).
 
 
-[badge_build]:      https://img.shields.io/github/actions/workflow/status/TheDragonCode/pretty-routes/laravel-9.yml?style=flat-square
+[badge_build]:      https://img.shields.io/github/actions/workflow/status/TheDragonCode/pretty-routes/phpunit.yml?style=flat-square
 
 [badge_downloads]:  https://img.shields.io/packagist/dt/dragon-code/pretty-routes.svg?style=flat-square
 
