@@ -27,8 +27,6 @@ class PrettyRoutesController extends BaseController
 {
     /**
      * Getting a template for routes.
-     *
-     * @return \Illuminate\Contracts\View\View
      */
     public function show(): View
     {
@@ -37,11 +35,6 @@ class PrettyRoutesController extends BaseController
 
     /**
      * Getting a list of routes.
-     *
-     * @param \DragonCode\LaravelRoutesCore\Support\Routes $routes
-     * @param \PrettyRoutes\Support\Config $config
-     *
-     * @return \Illuminate\Http\JsonResponse
      */
     public function routes(Routes $routes, Config $config): JsonResponse
     {
@@ -54,8 +47,6 @@ class PrettyRoutesController extends BaseController
 
     /**
      * Clearing cached routes.
-     *
-     * @return \Illuminate\Http\JsonResponse
      */
     public function clear(): JsonResponse
     {
