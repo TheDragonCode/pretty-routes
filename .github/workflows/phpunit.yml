@@ -9,8 +9,8 @@ jobs:
         strategy:
             fail-fast: true
             matrix:
-                php: [ "7.3", "7.4", "8.0", "8.1", "8.2" ]
-                laravel: [ "6.0", "7.0", "8.0", "9.0", "10.0" ]
+                php: [ "7.3", "7.4", "8.0", "8.1", "8.2", "8.3" ]
+                laravel: [ "6.0", "7.0", "8.0", "9.0", "10.0", "11.0" ]
                 exclude:
                     -   laravel: "6.0"
                         php: "8.1"
@@ -18,17 +18,26 @@ jobs:
                     -   laravel: "6.0"
                         php: "8.2"
                         
+                    -   laravel: "6.0"
+                        php: "8.3"
+                        
                     -   laravel: "7.0"
                         php: "8.1"
 
                     -   laravel: "7.0"
                         php: "8.2"
 
+                    -   laravel: "7.0"
+                        php: "8.3"
+
                     -   laravel: "9.0"
                         php: "7.3"
 
                     -   laravel: "9.0"
                         php: "7.4"
+
+                    -   laravel: "9.0"
+                        php: "8.3"
 
                     -   laravel: "10.0"
                         php: "7.3"
@@ -38,6 +47,18 @@ jobs:
 
                     -   laravel: "10.0"
                         php: "8.0"
+
+                    -   laravel: "11.0"
+                        php: "7.3"
+
+                    -   laravel: "11.0"
+                        php: "7.4"
+
+                    -   laravel: "11.0"
+                        php: "8.0"
+
+                    -   laravel: "11.0"
+                        php: "8.1"
 
         name: PHP ${{ matrix.php }}, Laravel ${{ matrix.laravel }}
 
@@ -50,7 +71,7 @@ jobs:
                 with:
                     php-version: ${{ matrix.php }}
                     extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv
-                    coverage: none
+                    coverage: xdebug
 
             -   name: Install dependencies
                 run: composer require --dev laravel/framework:^${{ matrix.laravel }}
