@@ -91,7 +91,7 @@ php artisan vendor:publish --provider="PrettyRoutes\ServiceProvider"
 
 ## Using
 
-Open the `/routes` uri. For example, [http://localhost:8000/routes](http://localhost:8000/routes])
+Open the `/routes` uri. For example, [http://localhost:8000/routes](http://localhost:8000/routes)
 
 ## License
 
