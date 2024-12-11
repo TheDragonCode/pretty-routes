@@ -41,6 +41,7 @@ class ServiceProvider extends BaseServiceProvider
 
         $this->publishes([
             $this->fullPath('config/pretty-routes.php') => $this->app->configPath('pretty-routes.php'),
+            $this->fullPath('resources/views/styles.blade.php') => $this->app->resourcePath('views/vendor/pretty-routes/styles.blade.php'),
         ]);
 
         $this->loadRoutesFrom(
