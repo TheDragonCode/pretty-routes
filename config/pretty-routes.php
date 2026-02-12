@@ -57,6 +57,8 @@ return [
         '#^routes#',
         '#^sanctum#',
         '#^telescope#',
+        '#^_boost#',
+        '#oauth2-callback$#',
     ],
 
     /*
