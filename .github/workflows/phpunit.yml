@@ -102,7 +102,7 @@ jobs:
                     coverage: xdebug
 
             -   name: Install dependencies
-                run: composer require --dev laravel/framework:^${{ matrix.laravel }}
+                run: composer require --no-security-blocking --dev laravel/framework:^${{ matrix.laravel }}
 
             -   name: Execute tests
                 run: sudo vendor/bin/phpunit
